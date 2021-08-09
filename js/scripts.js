@@ -4,14 +4,28 @@ alert(sentence);
 
 function letters() {
   let letter1 = sentence.toUpperCase().charAt(0);
-  let letter2 = sentence.toUpperCase().charAt(sentence.length -1);
+  let letter2 = sentence.toUpperCase().charAt(sentence.length - 1);
   let combo = letter1 + letter2;
   alert(combo)
   function reverseLetters() {
- 
     let reverseCombo = combo.split("").reverse().join("").toString();
-    alert(reverseCombo);
-    console.log("Hello Benjamin")
+    alert(reverseCombo)
+    function add() {
+      let message = sentence + reverseCombo;
+      alert(message)
+      function count() {
+        let newChar = sentence.charAt(sentence.length / 2)
+        let message2 = newChar + message
+        alert(message2)
+        function reverse() {
+          let newMessage = message2.split("").reverse().join("").toString();
+          alert(newMessage)
+        }
+        reverse();
+      }
+      count();
+    }
+    add();
   }
   reverseLetters();
 };
