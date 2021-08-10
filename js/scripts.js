@@ -1,7 +1,6 @@
 let sentence = prompt("Please enter a sentence.");
 alert(sentence);
 
-
 function letters() {
   let letter1 = sentence.toUpperCase().charAt(0);
   let letter2 = sentence.toUpperCase().charAt(sentence.length - 1);
@@ -30,4 +29,22 @@ function letters() {
   reverseLetters();
 };
 letters();
+
+
+$(document).ready(function() {
+  $("h1").click(function() {
+    alert("This is a heading.");
+  });
+
+  $("h2").click(function() {
+    alert(reverse());
+  });
+
+  $("img").click(function() {
+    alert(sentence);
+  });
+});
+
+
+
 

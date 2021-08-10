@@ -1,0 +1,9 @@
+.container {
+  margin: auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+.container img {
+  width: 50%;
+}
